@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peluquería Lucy - Ubicacion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff0f5;
+      color: #c71585;
+    }
+    header {
+      background: #ff69b4;
+      color: white;
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 50px;
+      margin-right: 1em;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 1em;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ff69b4;
+      border-radius: 10px;
+    }
+    footer {
+      background: #c71585;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    .counter {
+      margin-top: 1em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center">
+      <img src="images/img1.jpg" alt="Logo de Peluquería Lucy">
+      <h1>Peluquería Lucy</h1>
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="acerca.html">Acerca de Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+	   <h2>¡tu belleza es nuestra inspiracion!</h2>
+  </header>
+  <main>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.377813806491!2d-99.9203435!3d20.735475299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d37f002540f04f%3A0x80509a23bbe90a68!2sBelleza%20y%20Est%C3%A9tica!5e0!3m2!1ses!2smx!4v1748275529826!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </main>
+  <footer <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Visitas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .contador {
+      font-size: 2rem;
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <p class="contador" id="contador">0</p>
+  <script>
+    // Obtener el contador actual desde localStorage
+    let visitas = localStorage.getItem('contadorVisitas');
+
+    // Si no existe, inicializarlo en 0
+    if (!visitas) {
+      visitas = 0;
+    }
+
+    // Incrementar el contador
+    visitas++;
+
+    // Guardar el nuevo valor en localStorage
+    localStorage.setItem('contadorVisitas', visitas);
+
+    // Mostrar el contador en la página
+    document.getElementById('contador').textContent = visitas;
+  </script>
+</body>
+</html>
+  <p>Síguenos en redes:</p>
+  <div style="font-size: 1.5em; margin-top: 10px;">
+    <a href="https://www.facebook.com/share/18oyVdrPi4/" target="_blank" style="color: white; margin: 0 10px;">Facebook</a>
+   <a href="https://www.instagram.com/esteticalucy_17500?igsh=MWxhaWx6bnlyNjVrZA==" target="_blank" style="color: white; margin: 0 10px;">instagram</a>
+	  <a href="https://youtube.com/@peluquerialucy?si=0_5IDnP31QDJ9ruA" target="_blank" style="color: white; margin: 0 10px;">youtube</a>
+  </div>
+</footer>
+  <script>
+    const visitasKey = 'visitas_ubicacion.html';
+    let visitas = localStorage.getItem(visitasKey);
+    if (!visitas) {
+      visitas = 1;
+    } else {
+      visitas = parseInt(visitas) + 1;
+    }
+    localStorage.setItem(visitasKey, visitas);
+    document.getElementById('visitas').textContent = visitas;
+  </script>
+</body>
+</html>
